@@ -1,0 +1,37 @@
+.services {
+	margin-top: 75px;
+
+	&__container {
+		@include useContainer();
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__left {
+		width: 30%;
+		padding-right: 30px;
+		border-right: 1px solid $c-black;
+	}
+
+	&__right {
+		width: 65%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__title {
+		@include useSectionTitle();
+	}
+
+	&__para {
+		margin-bottom: 30px;
+	}
+
+	&__btn {
+		@include useShapedBtn();
+		color: $c-white;
+		background: $c-primary;
+		font-size: 18px;
+		padding: 18px 40px;
+	}
+}

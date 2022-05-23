@@ -1,0 +1,21 @@
+.social-media {
+	margin-top: 20px;
+	display: flex;
+
+	&__item {
+		width: 30px;
+		height: 30px;
+		color: $c-black;
+		margin-right: 25px;
+		@include useTransition();
+
+		&:hover {
+			color: $c-primary;
+		}
+	}
+
+	&__icon {
+		width: 100%;
+		height: 100%;
+	}
+}

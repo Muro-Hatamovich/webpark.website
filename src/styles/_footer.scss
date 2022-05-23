@@ -1,0 +1,20 @@
+.footer {
+	margin-top: 75px;
+	padding-bottom: 47.5px;
+
+	&__container {
+		@include useContainer();
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__img {
+		width: 55%;
+		transform: translateX(-35px);
+	}
+
+	.contacts {
+		width: 40%;
+	}
+}

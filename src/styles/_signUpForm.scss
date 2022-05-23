@@ -1,0 +1,41 @@
+.sign-up-form {
+	background: #fefefe;
+	box-shadow: 0 3px 15px -3px rgba(0, 0, 0, 0.15);
+	border: 1px solid $c-black;
+	border-radius: 15px;
+	padding: 30px;
+
+	&__title {
+		font-size: 26px;
+		margin-bottom: 15px;
+	}
+
+	.field {
+		display: flex;
+		flex-flow: column;
+		margin-bottom: 15px;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+
+		&__input {
+			font-size: inherit;
+			padding: 5px 0;
+			outline: none;
+			border: 0;
+			border-bottom: 1px solid $c-black;
+			background: transparent;
+			color: #333;
+		}
+	}
+
+	&__submit {
+		@include useShapedBtn();
+		padding: 15px 30px;
+		font-size: inherit;
+		color: $c-white;
+		background: $c-primary;
+		margin-top: 35px;
+	}
+}

@@ -1,0 +1,15 @@
+.service {
+	width: 30%;
+
+	&__img {
+		width: 100%;
+	}
+
+	&__name {
+		color: $c-primary;
+	}
+
+	&__description {
+		font-size: 14px;
+	}
+}

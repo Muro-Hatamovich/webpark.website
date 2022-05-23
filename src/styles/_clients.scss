@@ -1,0 +1,20 @@
+.clients {
+	&__title {
+		font-size: 42px;
+		margin-bottom: 35px;
+		position: relative;
+		font-weight: 600;
+		text-align: center;
+	}
+
+	&__logos {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		width: 15%;
+		padding: 15px;
+	}
+}

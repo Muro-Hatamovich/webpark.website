@@ -1,0 +1,27 @@
+.contacts {
+	&__title {
+		@include useSectionTitle();
+	}
+
+	&-info {
+		margin-bottom: 35px;
+
+		&__link {
+			text-decoration: none;
+			color: currentColor;
+			display: flex;
+			align-items: center;
+			margin-bottom: 20px;
+			transition: 200ms;
+
+			&:hover {
+				color: $c-primary;
+			}
+		}
+
+		&__icon {
+			font-size: 25px;
+			margin-right: 5px;
+		}
+	}
+}

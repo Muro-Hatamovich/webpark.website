@@ -1,0 +1,21 @@
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+	&__container {
+		display: flex;
+		padding-top: 50px;
+	}
+
+	&__btn {
+		@include useShapedBtn();
+		color: $c-white;
+		background: $c-primary;
+		font-size: 14px;
+		padding: 0 20px;
+		margin-left: 50px;
+		transform: translateY(5px);
+	}
+}

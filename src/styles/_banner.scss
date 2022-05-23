@@ -1,0 +1,60 @@
+.banner {
+	display: flex;
+	align-items: center;
+	margin-top: 150px;
+
+	&__container {
+		@include useContainer();
+	}
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__left {
+		width: 55%;
+	}
+
+	&__right {
+		width: 45%;
+	}
+
+	&__title {
+		font-size: 65px;
+		line-height: 1.25;
+		margin-bottom: 20px;
+		font-weight: 600;
+	}
+
+	&__para {
+		line-height: 1.75;
+		margin-bottom: 30px;
+		width: 80%;
+	}
+
+	&__btn {
+		display: block;
+		padding: 20px;
+		font-size: 16px;
+		font-weight: 600;
+		color: $c-white;
+		background: $c-primary;
+		border-radius: 15px;
+		cursor: pointer;
+		border: 1px solid currentColor;
+		box-shadow: 0 3px 3px -3px #ccc;
+		@include useTransition();
+
+		&:hover {
+			background: $c-white;
+			color: $c-primary;
+		}
+	}
+
+	&__img {
+		max-width: 100%;
+		display: block;
+	}
+}
