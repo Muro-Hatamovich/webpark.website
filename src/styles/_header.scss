@@ -7,6 +7,11 @@
 	&__container {
 		display: flex;
 		padding-top: 50px;
+
+		@include screen-xsm() {
+			position: relative;
+			align-items: center;
+		}
 	}
 
 	&__btn {
@@ -17,5 +22,9 @@
 		padding: 0 20px;
 		margin-left: 50px;
 		transform: translateY(5px);
+
+		@include screen-xsm() {
+			display: none;
+		}
 	}
 }

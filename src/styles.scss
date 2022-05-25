@@ -60,3 +60,11 @@ body {
 	max-width: 1400px;
 	margin: 0 auto;
 }
+
+.hamburger-react {
+	display: none;
+
+	@include screen-xsm() {
+		display: block;
+	}
+}
