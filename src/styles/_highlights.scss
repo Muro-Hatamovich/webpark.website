@@ -3,8 +3,21 @@
 	display: flex;
 	justify-content: space-between;
 
+	@include tablet-md() {
+		flex-wrap: wrap;
+	}
+
 	&-item {
 		width: 23%;
+
+		@include tablet-md() {
+			width: 47.5%;
+			margin-bottom: 30px;
+		}
+
+		@include mobile-lg {
+			width: 100%;
+		}
 
 		&__title {
 			display: block;
@@ -12,11 +25,28 @@
 			font-weight: 600;
 			color: $c-primary;
 			margin-bottom: 5px;
+
+			@include screen-md() {
+				font-size: 16px;
+				line-height: 1.5;
+			}
+
+			@include screen-xsm() {
+				font-size: 14px;
+			}
+
+			@include tablet-md() {
+				font-size: 17px;
+			}
 		}
 
 		&__para {
 			font-size: 15px;
 			line-height: 1.5;
+
+			@include screen-xsm() {
+				font-size: 14px;
+			}
 		}
 	}
 }

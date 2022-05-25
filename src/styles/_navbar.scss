@@ -2,6 +2,10 @@
 	display: flex;
 	align-self: flex-end;
 
+	@include screen-xsm() {
+		display: none;
+	}
+
 	&__item {
 		text-decoration: none;
 		text-transform: uppercase;
@@ -10,6 +14,10 @@
 		font-weight: 600;
 		color: $c-black;
 		position: relative;
+
+		@include screen-sm() {
+			font-size: 14.5px;
+		}
 
 		&:last-child {
 			margin-right: 0;

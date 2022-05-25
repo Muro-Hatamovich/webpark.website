@@ -6,7 +6,9 @@ const About = () => (
 		<div className="about__container container">
 			<div className="about__row">
 				<div className="about__block about__left">
-					<h2 className="about__title">Немного о W E B P A R K</h2>
+					<h2 className="about__title">
+						Немного о <span>W E B P A R K</span>
+					</h2>
 					<p className="about__para">
 						WebPark - это студия веб разработки которая
 						предоставляет услуги разработки веб сайтов написанных

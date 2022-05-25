@@ -1,6 +1,16 @@
 .contacts {
 	&__title {
 		@include useSectionTitle();
+
+		@include screen-lg() {
+			font-size: 45px;
+			line-height: 1.2;
+		}
+
+		@include mobile-lg() {
+			font-size: 38px;
+			line-height: 1.2;
+		}
 	}
 
 	&-info {

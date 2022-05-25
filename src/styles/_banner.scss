@@ -11,14 +11,39 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+
+		@include tablet-lg() {
+			flex-direction: column;
+		}
 	}
 
 	&__left {
 		width: 55%;
+
+		@include screen-md() {
+			width: 60%;
+		}
 	}
 
 	&__right {
 		width: 45%;
+
+		@include screen-md() {
+			width: 40%;
+		}
+
+		@include tablet-lg() {
+			margin-bottom: 50px;
+			order: -1;
+		}
+	}
+
+	// Media only
+	&__right,
+	&__left {
+		@include tablet-lg() {
+			width: 100%;
+		}
 	}
 
 	&__title {
@@ -26,12 +51,52 @@
 		line-height: 1.25;
 		margin-bottom: 20px;
 		font-weight: 600;
+
+		@include screen-lg() {
+			font-size: 50px;
+		}
+
+		@include screen-sm() {
+			font-size: 40px;
+		}
+
+		@include screen-xsm() {
+			font-size: 36px;
+		}
+
+		@include tablet-lg() {
+			font-size: 50px;
+		}
+
+		@include mobile-lg() {
+			font-size: 40px;
+		}
+
+		@include mobile-md() {
+			font-size: 35px;
+		}
+
+		@include mobile-sm() {
+			font-size: 30px;
+		}
 	}
 
 	&__para {
 		line-height: 1.75;
 		margin-bottom: 30px;
 		width: 80%;
+
+		@include screen-lg() {
+			width: 90%;
+		}
+
+		@include screen-sm() {
+			font-size: 15px;
+		}
+
+		@include mobile-lg() {
+			width: 100%;
+		}
 	}
 
 	&__btn {
@@ -43,13 +108,19 @@
 		background: $c-primary;
 		border-radius: 15px;
 		cursor: pointer;
-		border: 1px solid currentColor;
+		border: 1px solid transparent;
 		box-shadow: 0 3px 3px -3px #ccc;
 		@include useTransition();
 
 		&:hover {
 			background: $c-white;
 			color: $c-primary;
+			border: 1px solid currentColor;
+		}
+
+		@include screen-sm() {
+			padding: 15px;
+			font-size: 15px;
 		}
 	}
 

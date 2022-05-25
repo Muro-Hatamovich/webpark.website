@@ -35,6 +35,14 @@ body {
 	background: $c-smoke;
 	font-size: 16px;
 	line-height: 1.75;
+
+	@include screen-xsm() {
+		line-height: 1.5;
+	}
+
+	@include tablet-lg() {
+		line-height: 1.75;
+	}
 }
 
 #root {
